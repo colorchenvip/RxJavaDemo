@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RxJavaDemo</string>
+    <string name="why_mark">\?</string>
+    <string name="tab_base">基本</string>
+</resources>
