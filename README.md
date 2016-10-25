@@ -54,7 +54,7 @@
   使用 BehaviorSubject 缓存数据。
 
 ### apk 下载
-[直接下载地址：]RxJavaSamples_1.01.apk](https://github.com/colorchenvip/RxJavaSamples/download/RxJavaSample_1.01.apk)
+[直接下载地址：]RxJavaDemo_1.01.apk](https://github.com/colorchenvip/RxJavaDemo/download/RxJavaDemo_1.01.apk)
 
 ### 参考
 * [gitHub](https://github.com/rengwuxian/RxJavaSamples)
