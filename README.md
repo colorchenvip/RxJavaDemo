@@ -1,6 +1,6 @@
 
 ##在高手肩膀上练功之RxSamples
-    使用到的技术和三方库：Material Design设计规范、
+    使用到的技术和三方库：网络上RxJava + RetroFit+okHttp  注解EventBus 以及android 5.0的特性
 
 ## 项目简介
 
