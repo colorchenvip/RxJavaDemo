@@ -12,6 +12,7 @@ import butterknife.ButterKnife;
 import rxjava.colorchen.com.fragment.tab1_first.FirstFragment;
 import rxjava.colorchen.com.fragment.tab2_map.MapFragment;
 import rxjava.colorchen.com.fragment.tab3_zip.ZipFragment;
+import rxjava.colorchen.com.fragment.tab4.CacheFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         return new ZipFragment();
                     case 3:
-                        return new ZipFragment();
+                        return new CacheFragment();
                     default:
                         return new FirstFragment();
                 }
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         return "压缩（zip）";
                     case 3:
-                        return "缓存）";
+                        return "缓存";
                     default:
                         return "默认";
                 }

@@ -4,10 +4,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <android.support.v7.widget.AppCompatTextView
-        android:id="@+id/loadingTimeTv"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp" />
+        android:layout_height="wrap_content"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/loadingTimeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
@@ -25,9 +33,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="end"
         android:paddingEnd="8dp"
-        android:paddingStart="8dp">
+        android:paddingStart="8dp"
+        android:gravity="end">
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/clearMemoryCacheBt"

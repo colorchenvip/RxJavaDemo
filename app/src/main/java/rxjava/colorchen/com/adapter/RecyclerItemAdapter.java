@@ -25,7 +25,7 @@ public class RecyclerItemAdapter extends RecyclerView.Adapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_map_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_item,parent,false);
         return new MapViewHolder(view);
     }
 

@@ -25,6 +25,7 @@ import rxjava.colorchen.com.fragment.tab4.data.ImageData;
 import rxjava.colorchen.com.model.Item;
 
 /**
+ * 数据缓存
  * Created by color on 24/10/2016 01:0.
  */
 
@@ -63,6 +64,7 @@ public class CacheFragment extends BaseFragment implements SwipeRefreshLayout.On
         cacheRv.setAdapter(adapter);
         swipeRefreshLayout.setColorSchemeColors(Color.BLUE, Color.GREEN, Color.RED, Color.YELLOW);
         swipeRefreshLayout.setOnRefreshListener(this);
+        onRefresh();
         return view;
     }
 
