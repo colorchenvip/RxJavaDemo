@@ -9,9 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
-import rxjava.colorchen.com.fragment.tab1.FirstFragment;
-import rxjava.colorchen.com.fragment.tab2.MapFragment;
-import rxjava.colorchen.com.fragment.tab3.ZipFragment;
+import rxjava.colorchen.com.fragment.tab1_first.FirstFragment;
+import rxjava.colorchen.com.fragment.tab2_map.MapFragment;
+import rxjava.colorchen.com.fragment.tab3_zip.ZipFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
                         return new MapFragment();
                     case 2:
                         return new ZipFragment();
+                    case 3:
+                        return new ZipFragment();
                     default:
                         return new FirstFragment();
                 }
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public int getCount() {
-                return 3;
+                return 4;
             }
 
             @Override
@@ -60,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
                         return "转换（map）";
                     case 2:
                         return "压缩（zip）";
+                    case 3:
+                        return "缓存）";
                     default:
                         return "默认";
                 }

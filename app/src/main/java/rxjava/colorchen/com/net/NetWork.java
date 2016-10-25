@@ -6,6 +6,7 @@ import retrofit2.Converter;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
+import rxjava.colorchen.com.net.api.GankApi;
 import rxjava.colorchen.com.net.api.ZhuangBiApi;
 
 /**
@@ -16,7 +17,7 @@ import rxjava.colorchen.com.net.api.ZhuangBiApi;
 
 public class NetWork {
     private static ZhuangBiApi zhuangBiApi;
-
+    private static GankApi gankApi;
     private static OkHttpClient mOkHttpClient = new OkHttpClient();
     private static Converter.Factory mGsonConverterFactory = GsonConverterFactory.create();
     private static CallAdapter.Factory mRxJavaCallAdapterFactory = RxJavaCallAdapterFactory.create();
@@ -36,5 +37,18 @@ public class NetWork {
             zhuangBiApi = retrofit.create(ZhuangBiApi.class);
         }
         return zhuangBiApi;
+    }
+
+    public static GankApi getGankApi(){
+        if (gankApi == null){
+            Retrofit retrofit = new Retrofit.Builder()
+                    .client(mOkHttpClient)
+                    .baseUrl("http://gank.io/api/")
+                    .addConverterFactory(mGsonConverterFactory)
+                    .addCallAdapterFactory(mRxJavaCallAdapterFactory)
+                    .build();
+            gankApi = retrofit.create(GankApi.class);
+        }
+        return gankApi;
     }
 }
